@@ -1,0 +1,12 @@
+{
+  "name": "crdts-econify",
+  "version": "1.0.0",
+  "description": "",
+  "scripts": {
+    "test": "jest . --verbose --watch"
+  },
+  "author": "",
+  "devDependencies": {
+    "jest": "^26.4.0"
+  }
+}
