@@ -9,6 +9,7 @@
     "test:watch": "jest . --watch"
   },
   "dependencies": {
+    "crdts": "git+https://github.com/orbitdb/crdts.git",
     "react": "^16.13.1",
     "react-dom": "^16.13.1"
   },
