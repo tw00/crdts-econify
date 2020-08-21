@@ -10,7 +10,7 @@ const crdts = [
     merge: (crdt1, crdt2) => crdt1.merge(crdt2),
     query: (crdt) => crdt.value,
   },
-  // Add CRDTS here...
+  // Add CRDTs here...
 ];
 
 describe("CRDTs", () => {
