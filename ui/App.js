@@ -6,9 +6,9 @@ import PNCounterUI from "./components/PNCounter";
 import GSetUI from "./components/GSet";
 import CmRDTSetUI from "./components/CmRDTSet";
 
-const LamportClock = require("../../crdts/src/lamport-clock");
+const LamportClock = require("crdts/test/lamport-clock");
 
-const GCounter = require("../../crdts-econify/src/G-Counter");
+const GCounter = require("../src/G-Counter");
 
 const {
   // GCounter,
@@ -17,7 +17,7 @@ const {
   TwoPSet,
   ORSet,
   LWWSet,
-} = require("../../crdts/src");
+} = require("crdts");
 
 const crdtList = {
   GCounter: { name: "G-Counter", class: GCounter, ui: GCounterUI },
