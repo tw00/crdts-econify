@@ -16,7 +16,7 @@ module.exports = class GCounter {
 
   merge(other) {
     Object.entries(other._counters).forEach(([id, value]) => {
-      this._counters[this._id] = Math.max(value, this._counters[this._id] || 0);
+      this._counters[id] = Math.max(value, this._counters[id] || 0);
     });
   }
 };

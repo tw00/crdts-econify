@@ -22,14 +22,6 @@ describe("CRDTs", () => {
 });
 
 function createTestSuite(CRDT) {
-  // Non-Triviality:
-  // a != {}
-  it("is not trivial", () => {
-    const crdt = CRDT.create("A");
-    CRDT.mutate(crdt, 8);
-    assert.ok(CRDT.query(crdt) === 8);
-  });
-
   // Associativity:
   // a + (b + c) == (a + b) + c
   it("is associative", () => {
@@ -101,5 +93,13 @@ function createTestSuite(CRDT) {
     assert.deepEqual(resLeft, resRight);
     assert.ok(resLeft);
     assert.ok(resRight);
+  });
+
+  // Non-Triviality:
+  // a != {}
+  it("is not trivial", () => {
+    const crdt = CRDT.create("A");
+    CRDT.mutate(crdt, 8);
+    assert.ok(CRDT.query(crdt) === 8);
   });
 }
