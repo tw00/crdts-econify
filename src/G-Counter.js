@@ -1,8 +1,8 @@
 const sum = (acc, val) => acc + val;
 
 module.exports = class GCounter {
-  constructor() {
-    this._id = Math.random().toString(16).substring(2);
+  constructor(id) {
+    this._id = id || Math.random().toString(16).substring(2);
     this._counters = { [this._id]: 0 };
   }
 
